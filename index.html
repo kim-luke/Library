@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html>
 
+<head >
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Domine">
+</head>
+
+<body>
+
+  <div id="container">
+
+    <h2> Your library </h2>
+    <p> This library is meant to help readers keep track of their reading list, 
+        wish list, and books they have already read. Please enjoy! =)
+    </p>
+
+    <form class="bookForm" id="bookForm">
+
+      <div id="row">
+        <div id="titleDiv">
+          <label for="title">Book</label>
+          <input type="text" id="title" name="title">
+        </div>
+
+        <div id="authorDiv">
+          <label for="author">Author</label>
+          <input type="text" id="author" name="author">
+        </div>
+
+        <div id="pageDiv">
+          <label for="pages">Number of pages</label>
+          <input type="text" id="pages" name="pages">
+        </div>
+
+        <div id="completionDiv">
+          <label for="completed">Status</label>
+          <select name="completed" id="completed">
+            <option value="read">Read</option>
+            <option value="not read">Not read</option>
+          </select>
+        </div>
+      </div>
+
+      <input type="submit" id="bookButton" name="addBook" value="submit">
+      
+    </form>
+
+    <table id="library">
+      <tr>
+        <th class="header" id="tableName">Name</th>
+        <th class="header" id="tableAuthor">Author</th>
+        <th class="header" id="tablePages">Pages</th>
+        <th class="header" id="tableStatus">Status</th>
+        <th class="header" id="tableDelete"></th>
+      </tr>
+
+      <tbody id="tableBody"></tbody>
+
+    </table>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body> 
+</html>
