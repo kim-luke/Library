@@ -1,0 +1,144 @@
+#container {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 80px;
+  font-family: "Domine";
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Raleway";
+  font-size: 20px;
+}
+
+form {
+  display: inline-block;
+  margin: auto;
+  text-align: left;
+  margin-top: 60px;
+  width: 75%;
+}
+
+label, input {
+  display: block;
+} 
+
+#titleDiv, #authorDiv, #pageDiv, #completionDiv {
+  float: left;
+}
+
+#title, #author, #pages, #completed {
+  border-radius: 4px;
+}
+
+#title:focus, #author:focus, #pages:focus, #completed:focus {
+  border: 1px solid #33C3F0;
+  outline: 0;
+}
+
+#title, #author {
+  width: 350px;
+}
+
+#bookButton {
+  position: relative;
+  top: 1em;
+  right: 88em;
+  cursor: pointer;
+  height: 38px;
+  width: 110px;
+  border-radius: 4px;
+  outline: none;
+  text-align: center;
+  line-height: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  color: #fff;
+  font-weight: 600;
+  background-color: #33C3F0 !important;
+}
+
+#bookButton:hover {
+  background-color: #1EAEDB !important;
+}
+
+#bookForm label {
+  font-family: "Raleway";
+  margin: 5px 10px 5px 0;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+#bookForm input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  margin: 5px 10px 5px 0;
+}
+
+#bookForm select {
+  padding: 11px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+table {
+  margin: auto;
+  width: 75%;
+  margin-top: 100px;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  font-family: "Raleway";
+  width: 350px;
+}
+
+tr {
+  border-bottom: 1px solid #E1E1E1;
+  height: 70px;
+}
+
+#tablePages {
+  width: 150px;
+}
+
+#tableStatus {
+  width: 150px;
+}
+
+#tableDelete {
+  width: 150px;
+}
+
+table button {
+  cursor: pointer;
+  height: 38px;
+  width: 100px;
+  border-radius: 4px;
+  border: 1px solid #BBBBBB;
+  background-color: white;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+table button:hover {
+  border: 1px solid #888888;
+}
+
+.delete {
+  width: 120px;
+  background-color: #E41A67;
+  color: white;
+}
+
+.delete:hover {
+  background-color: #CF185E;
+}
