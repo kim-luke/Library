@@ -44,12 +44,10 @@ function getBookFromInput() {
   const totalPages = document.querySelector("#pages").value;
   const completion = document.querySelector('#completed').value;
   return new Book(title, author, totalPages, completion);
-
 }
 
 // pushes book to library
 function addBookToLibrary(newBook) {
-  console.log("pushed book to library");
   library.push(newBook);
 }
 
@@ -57,8 +55,8 @@ function addBookToLibrary(newBook) {
 function addBook(event) {
   event.preventDefault();
   addBookToLibrary(getBookFromInput());
-  updateLibrary();
   updateLocalStorage();
+  updateLibrary();
   clearForm();
 } 
 
