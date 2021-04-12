@@ -2,7 +2,7 @@ let library = [];
 let table = document.getElementById("library").addEventListener("click", (e) => {
   const currentTarget = e.target.parentNode.parentNode.childNodes[1];
   if (e.target.innerHTML == "Delete") {
-    if (confirm(`are you sure you want to delete ${currentTarget.innerText}`))
+    if (confirm(`Are you sure you want to delete ${currentTarget.innerText}?`))
       deleteBook(findBook(library, currentTarget.innerText));
   }
 
